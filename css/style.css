@@ -15,5 +15,57 @@
 /* ******************************** */
 
 /* Colores */
-
+:root {
+  /* Mode 1 */
+  /* colors */
+  --color-amarillo: #dfa704;
+  --color-amarillomedio: #b97d04;
+  --color-amarillooscuro: #785102;
+  --color-amarilloquemado: #715d36;
+}
 /* ******************************** */
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/desktop/imagenfondo.webp);
+  background-size: cover;
+  
+}
+
+.contenedor__minutos{
+  color: var(--color-amarillo);
+  
+}
+.contenedor__textoMinu{
+  color: var(--color-amarillo);
+}
+.contenedor__horas{
+  color:var(--color-amarillomedio)
+}
+.contenedor__textoHora{
+  color: var(--color-amarillomedio);
+}
+.contenedor_dias{
+  color: var(--color-amarilloquemado);
+}
+.contenedor__textoDias{
+  color: var(--color-amarilloquemado);
+}
+
+.barra__vertical{
+  background-color: var(--color-amarillo);
+  grid-column: 1/1;
+  grid-row: 1/3;
+  
+}
+
+/* GRID 3x3 */
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  /* gap: Sepracion(tamaño de espacio entre ellas) entre celdas */
+  gap: 20px;
+}
+
+
